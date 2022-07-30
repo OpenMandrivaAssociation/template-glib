@@ -7,7 +7,7 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		template-glib
-Version:	3.34.0
+Version:	3.34.1
 Release:	1
 Summary:	A templating library for GLib
 Group:		Graphical desktop/GNOME
@@ -78,20 +78,16 @@ Obsoletes:	%{_lib}template_glib-devel < 3.28.0-2
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
-
 %prep
-%autosetup
-
+%autosetup -p1
 
 %build
 %meson -D enable_gtk_doc=true
 %meson_build
 
-
 %install
 %meson_install
 %find_lang template-glib
-
 
 %files i18n -f template-glib.lang
 

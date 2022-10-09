@@ -82,7 +82,7 @@ developing applications that use %{name}.
 %autosetup -p1
 
 %build
-%meson -D enable_gtk_doc=true
+%meson
 %meson_build
 
 %install

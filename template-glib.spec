@@ -100,7 +100,6 @@ developing applications that use %{name}.
 %{_libdir}/girepository-1.0/Template-%{api}.typelib
 
 %files -n %{devname}
-%doc %{_datadir}/gtk-doc/html/template-glib
 %{_datadir}/gir-1.0/Template-%{api}.gir
 %{_datadir}/vala/vapi/template-glib-%{api}.*
 %{_includedir}/*

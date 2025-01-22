@@ -7,8 +7,8 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		template-glib
-Version:	3.36.2
-Release:	2
+Version:	3.36.3
+Release:	1
 Summary:	A templating library for GLib
 Group:		Graphical desktop/GNOME
 

@@ -7,8 +7,8 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		template-glib
-Version:	3.36.3
-Release:	2
+Version:	3.38.0
+Release:	1
 Summary:	A templating library for GLib
 Group:		Graphical desktop/GNOME
 
@@ -19,7 +19,6 @@ Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version
 BuildRequires:	bison
 BuildRequires:	flex
 BuildRequires:	gettext
-BuildRequires:	gtk-doc
 BuildRequires:	meson
 BuildRequires:	vala
 BuildRequires:	vala-tools
@@ -93,7 +92,7 @@ developing applications that use %{name}.
 
 %files -n %{libname}
 %license COPYING
-%doc AUTHORS NEWS README.md
+%doc NEWS README.md
 %{_libdir}/libtemplate_glib-%{api}.so.%{major}{,.*}
 
 %files -n %{girname}

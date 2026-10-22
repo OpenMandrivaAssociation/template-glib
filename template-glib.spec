@@ -8,7 +8,7 @@
 
 Name:		template-glib
 Version:	3.40.0
-Release:	2
+Release:	3
 Summary:	A templating library for GLib
 Group:		Graphical desktop/GNOME
 
